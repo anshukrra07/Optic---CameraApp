@@ -31,10 +31,26 @@
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
 	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This app requires access to play audio recordings.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app requires camera access to capture photos and videos.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>This app may use your location even in the background to log captures accurately.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string>This app requires location access to attach location to captures.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This app needs microphone access to record audio with videos or as fallback audio.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This app needs access to save captured media to your photo library.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App needs access to your gallery to read photos and videos</string>
 	<key>RCTNewArchEnabled</key>
-	<false/>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -1,5 +1,14 @@
 {
   "extends": "@react-native/typescript-config",
-  "include": ["**/*.ts", "**/*.tsx"],
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "noEmit": true,
+    "allowJs": true,
+    "jsx": "react-jsx",      // for React 17+ JSX transform
+    "types": ["react", "react-native"],
+    "typeRoots": ["./src/types", "./node_modules/@types"]  // ✅ Added
+  },
+  "include": ["src", "**/*.ts", "**/*.tsx"],
   "exclude": ["**/node_modules", "**/Pods"]
 }
