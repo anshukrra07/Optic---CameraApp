@@ -1,7 +1,7 @@
 # 📸 Pro Camera (React / React Native)
 
 <p align="center">
-  <img src="src/Optix.png" alt="Optix - Camera app" width="50%" />
+  <img src="src/Optix.png" alt="Optix - Camera app" width="40%" />
 </p>
 
 
