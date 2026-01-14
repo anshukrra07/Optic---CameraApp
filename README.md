@@ -1,105 +1,100 @@
-# 📸 Pro Camera App (React Native + Expo)
+# 📸 Pro Camera (React / React Native)
 
-A professional-style **Pro Camera application** built with **React Native, Expo Camera, and TypeScript**.  
-The app focuses on camera capture, filters, quality control, and a clean modular architecture.
+![Optix - Camera app](src/Optix.png "CAMERA APP")
 
----
 
-## 🚀 Features
-
-- 📷 Live camera preview  
-- 🔄 Front & back camera switching  
-- 🖼 Photo capture  
-- 🎥 Video recording  
-- 🎛 Pro-style camera controls  
-- 🎨 Real-time filter selection  
-- ⚙️ Capture quality control (Low / Medium / High)  
-- 🧭 Photo / Video mode selector  
-- 🧩 Modular & scalable component structure  
+A **Pro Camera** interface built with modern React components, designed to mimic a professional camera experience.  
+This project focuses purely on **camera service & functionality**, keeping the service logic consistent across platforms while allowing UI flexibility.
 
 ---
 
-## 🧠 Project Structure
+## ✨ Description
 
+Pro Camera provides a modular, clean, and scalable camera system with professional-style controls such as:
+- Live camera preview
+- Capture actions (photo/video)
+- Mode switching
+- Quality & filter controls
+- Clean top bar and control layout
+
+The core **camera service remains the same**, ensuring consistent behavior, while UI components are separated for maintainability.
+
+---
+
+## 🧩 Key Features
+
+- 📷 Live camera preview
+- 🎥 Photo & video capture controls
+- 🎚️ Mode selector (Photo / Video / Pro-style modes)
+- 🎨 Filters & quality adjustments
+- 🧭 Top bar with camera options
+- 🧱 Modular component-based architecture
+
+---
+
+## 🗂️ Project Structure
+
+```text
+src/
+├── App.tsx                 # Application entry point
+├── ProCamera.tsx           # Main camera container
+├── CameraPreview.tsx       # Live camera preview
+├── CaptureButtons.tsx      # Photo/Video capture buttons
+├── ModeSelector.tsx        # Camera mode selection
+├── ControlContainer.tsx    # Wrapper for camera controls
+├── Controls.tsx            # Aggregated controls
+├── FilterControl.tsx       # Filter adjustments
+├── QualityControl.tsx      # Resolution / quality settings
+└── TopBar.tsx              # Top camera bar (flash, settings, etc.)
 ```
-App.tsx
- └── ProCamera.tsx
-      ├── TopBar.tsx
-      ├── CameraPreview.tsx
-      ├── ModeSelector.tsx
-      ├── ControlContainer.tsx
-      │     ├── Controls.tsx
-      │     ├── CaptureButtons.tsx
-      │     ├── FilterControl.tsx
-      │     └── QualityControl.tsx
-```
 
 ---
 
-## 🧩 Shared Service (Common Across Apps)
+## ⚙️ How It Works
 
-This application uses a **single shared service layer** that is reused across multiple apps with the **same behavior and rules**.
-
-### Service Responsibilities
-
-- Session handling (anonymous & authenticated)
-- Secure, scope-based message routing
-- Camera & microphone permission handling
-- UI-level execution only
-- Demo-safe data flow (no real tracking or monitoring)
-
-### Security Model
-
-- Runs strictly in **demo mode**
-- No live surveillance
-- No background recording
-- No admin or production APIs exposed
-- Session-scoped rendering for privacy
-
-The service logic is **identical across apps**, ensuring consistent architecture and behavior.
+- **ProCamera.tsx** acts as the central orchestrator.
+- Camera preview and controls are separated into independent components.
+- Control components interact with the same camera service logic.
+- Easy to extend with new controls (ISO, exposure, focus, zoom).
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Getting Started
 
-- React Native  
-- Expo Camera  
-- TypeScript  
-- React Hooks  
-
----
-
-## 📦 Installation
-
+### 1️⃣ Install dependencies
 ```bash
 npm install
 ```
 
----
-
-## ▶️ Run the App
-
+### 2️⃣ Run the project
 ```bash
-npx expo start
+npm start
+```
+or
+```bash
+npm run dev
 ```
 
-Run on:
-- Android Emulator  
-- iOS Simulator  
-- Physical Device (Expo Go)  
+---
+
+## 🛠️ Customization
+
+You can:
+- Add advanced camera controls (ISO, Shutter Speed)
+- Integrate native camera APIs
+- Extend filters & quality presets
+- Connect with backend media storage
 
 ---
 
-## 🔐 Permissions
+## 📌 Notes
 
-- Camera access  
-- Microphone access (for video recording)  
-
-All permissions are handled safely using Expo APIs.
+- This README covers **only the camera service & functionality**
+- Business logic and UI are intentionally decoupled
+- Designed to be reusable across multiple projects
 
 ---
 
 ## 📄 License
 
-This project is intended for learning and demonstration purposes.  
-You are free to modify and extend it.
+This project is open-source and free to use for learning and development.
