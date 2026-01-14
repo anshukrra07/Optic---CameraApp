@@ -1,6 +1,8 @@
 # 📸 Pro Camera (React / React Native)
 
-<img src="src/Optix.png" alt="Optix - Camera app" width="40%" />
+<p align="center">
+  <img src="src/Optix.png" alt="Optix - Camera app" height="300" />
+</p>
 
 
 A **Pro Camera** interface built with modern React components, designed to mimic a professional camera experience.  
